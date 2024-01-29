@@ -1,0 +1,77 @@
+#navbar ul {
+    list-style: none;
+}
+
+#navbar .main-nav {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#navbar .main-nav nav ul {
+    margin-left: 2rem;
+    gap: 2rem;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#navbar .product-nav {
+    position: relative;
+}
+
+#navbar .product-nav ul {
+    gap: 2rem;
+}
+
+#navbar .product-nav ul li {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+
+}
+
+#navbar .product-nav ul li:hover {
+    font-weight: 700;
+}
+
+#navbar .product-nav ul li:hover {
+    font-weight: 700;
+}
+
+#navbar .product-nav ul li .product-menu {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    width: 100%;
+    display: none;
+}
+
+#navbar .product-nav ul li:hover .product-menu {
+    display: block;
+}
+
+#navbar .product-nav .product-menu .category-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#navbar .product-nav .product-menu .category-grid .category>.title {
+    font-size: 1.25rem;
+}
+
+#navbar .product-nav .product-menu .category-grid .category>.title::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: darkgoldenrod;
+}
+
+#navbar .product-nav .product-menu .category-grid .category .subcategories ul li {
+    padding-top: .75rem;
+    padding-bottom: .5rem;
+}
